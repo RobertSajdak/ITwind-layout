@@ -1,0 +1,51 @@
+.btn {
+  background-color: $blue-primary;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-6;
+  margin: 5px 0;
+  padding: 18px 36px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    border-color: $blue-primary;
+    color: $blue-primary;
+  }
+
+  &--small {
+    padding: 12px 36px;
+  }
+
+  &--dark {
+    background-color: $gray-dark;
+
+    &:hover {
+      background-color: $white;
+      border-color: $gray-dark;
+    }
+  }
+}
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 10;
+
+  &:hover {
+    svg,
+    path {
+      stroke: $gray-dark;
+    }
+  }
+
+  @include medium-up {
+    display: none;
+  }
+}
