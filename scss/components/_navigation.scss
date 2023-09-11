@@ -36,6 +36,62 @@
             width: 100%;
           }
         }
+
+        &.active {
+          color: $blue-primary;
+        }
+      }
+    }
+  }
+
+  &--mobile {
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 97px;
+    z-index: 1;
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 0;
+
+  &__list {
+    & a {
+      color: $gray-dark;
+      display: block;
+      margin-bottom: 48px;
+      text-align: center;
+      padding-bottom: 6px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: $blue-primary;
+        border-radius: 999px;
+        transition: width 0.15s ease-in;
+      }
+
+      &:hover {
+        color: $blue-primary;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        color: $blue-primary;
       }
     }
   }
