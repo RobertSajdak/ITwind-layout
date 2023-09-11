@@ -1,0 +1,39 @@
+.showcase {
+  background: url("../img/showcase.png");
+  background-size: cover;
+  padding: 125px 0 184px;
+
+  @include medium-up {
+    padding: 142px 0 219px;
+  }
+
+  & .flex {
+    align-items: flex-start;
+    flex-direction: column;
+
+    & h1 {
+      color: $white;
+      margin-bottom: 18px;
+
+      @include medium-up {
+        margin-bottom: 27px;
+        width: 65%;
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: $font-size-6;
+      font-weight: $font-weight-medium;
+      line-height: $line-height-sm;
+      margin-bottom: 48px;
+
+      @include medium-up {
+        font-size: $font-size-5;
+        line-height: $line-height-base;
+        margin-bottom: 32px;
+        width: 65%;
+      }
+    }
+  }
+}
