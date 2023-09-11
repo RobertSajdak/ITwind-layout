@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: $white;
+  background-color: $gray-dark;
   color: $gray-dark;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: $font-size-base;
   margin: 0;
   padding: 0;
@@ -35,4 +35,8 @@ ul {
 a,
 li {
   text-decoration: none;
+
+  &:focus {
+    outline: 1px solid transparent;
+  }
 }

@@ -1,6 +1,6 @@
-# IT Wind Business Consulting
+# ITwind Business Consulting
 
-### Website layout design for a consulting company - IT Wind.
+### Website layout design for a consulting company - ITwind.
 
 ## The goal of the project
 
