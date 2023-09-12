@@ -1,7 +1,7 @@
 {
   "name": "ITwind Business Consulting",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website layout.",
   "main": "index.js",
   "scripts": {
     "dev": "gulp"
