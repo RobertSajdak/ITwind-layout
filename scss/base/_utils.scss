@@ -1,4 +1,4 @@
-// Flex
+// ===== Flex =====
 .u-align-center {
   align-items: center;
 }
@@ -30,7 +30,7 @@
   justify-content: space-between;
 }
 
-// Text
+// ===== Text =====
 .u-text-center {
   text-align: center;
 }
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-// Spacing
+// ===== Spacing =====
 .u-m-auto {
   margin: 0 auto;
 }
@@ -222,7 +222,7 @@
   padding-left: $grid-base * 5;
 }
 
-// overlay
+// ===== Overlay =====
 .overlay {
   position: fixed;
   top: 0;

@@ -9,13 +9,18 @@
   }
 }
 
+//Grid Layout Classes
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
   align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
   height: 100%;
+  justify-content: center;
+
+  @include medium-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &--3 {
     grid-template-columns: repeat(3, 1fr);
@@ -26,17 +31,18 @@
   }
 }
 
+//Flexbox Layout Classes
 .flex {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .col {
-  width: 100%;
-  padding: $grid-base * 1.5;
   display: inline-block;
+  padding: $grid-base * 1.5;
+  width: 100%;
 
   &--md25 {
     @include medium-up {
@@ -47,8 +53,8 @@
 
   &--md33 {
     @include medium-up {
-      flex: 0 0 33.3%;
-      max-width: 33.3%;
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
     }
   }
 
@@ -68,8 +74,8 @@
 
   &--lg33 {
     @include large-up {
-      flex: 0 0 33.3%;
-      max-width: 33.3%;
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
     }
   }
 
@@ -77,6 +83,13 @@
     @include large-up {
       flex: 0 0 50%;
       max-width: 50%;
+    }
+  }
+
+  &--lg75 {
+    @include large-up {
+      flex: 0 0 75%;
+      max-width: 75%;
     }
   }
 
