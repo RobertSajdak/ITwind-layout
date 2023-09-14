@@ -35,11 +35,11 @@ To run this project, start it in root directory using:
 
 Example screenshots:
 
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
-![Example screenshot](./img/screenshots/...)
+![Example screenshot](./img/screenshots/screen_1.jpg)
+![Example screenshot](./img/screenshots/screen_2.jpg)
+![Example screenshot](./img/screenshots/screen_3.jpg)
+![Example screenshot](./img/screenshots/screen_1_mobile.jpg)
+![Example screenshot](./img/screenshots/screen_2_mobileMenu.jpg)
 ![Example screenshot](./img/screenshots/...)
 
 ## Features
