@@ -144,9 +144,9 @@
   }
 
   &__top {
+    margin-top: -142px;
     min-height: 284px;
     padding: 52px 15px;
-    margin-top: -142px;
 
     @include medium-up {
       padding: 52px;
@@ -156,8 +156,8 @@
       display: none;
 
       @include medium-up {
-        display: block;
         background: url("/img/about-1.png");
+        display: block;
       }
     }
 
@@ -168,8 +168,8 @@
 
     &-number {
       font-size: $font-size-1;
-      line-height: 64px;
       font-weight: $font-weight-bold;
+      line-height: 64px;
     }
 
     &-heading {
@@ -189,8 +189,8 @@
   }
 
   &__heading {
-    text-align: center;
     margin-top: 42px;
+    text-align: center;
 
     @include medium-up {
       margin-top: 91px;
@@ -219,13 +219,13 @@
     }
 
     &-item {
-      position: relative;
+      align-items: center;
       background-color: $white;
-      padding: 40px 81px 40px 80px;
+      border-bottom-right-radius: 20px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      border-bottom-right-radius: 20px;
+      padding: 40px 81px 40px 80px;
+      position: relative;
 
       @include medium-up {
         padding: 46px 27px 46px 28px;
@@ -263,10 +263,85 @@
 
       & p {
         color: $gray-dark;
-        text-align: center;
         margin: 6px 0 44px;
+        text-align: center;
 
         @include font-15;
+      }
+    }
+  }
+}
+
+.blog {
+  padding: 36px 0;
+
+  @include medium-up {
+    padding: 74px 0;
+  }
+
+  &__heading {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  & .grid {
+    gap: 42px;
+    margin-top: 22px;
+
+    @include medium-up {
+      gap: 38px;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 79px;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+
+    &-date {
+      border-bottom: 1px solid $gray-light;
+      color: $blue-primary;
+      display: block;
+      font-weight: $font-weight-bold;
+      margin: 16px 0 12px;
+      width: 32%;
+      @include font-18;
+    }
+
+    &-info {
+      display: flex;
+
+      & span {
+        align-items: center;
+        display: flex;
+        margin-right: 20px;
+
+        & img {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    & h3 {
+      margin: 18px 0 8px;
+    }
+
+    & p {
+      margin-bottom: 18px;
+      @include font-15;
+    }
+
+    & a {
+      align-items: center;
+      color: $gray-dark;
+      display: flex;
+      font-weight: $font-weight-bold;
+
+      & img {
+        margin-left: 8px;
       }
     }
   }
