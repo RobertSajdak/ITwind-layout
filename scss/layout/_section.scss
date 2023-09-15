@@ -346,3 +346,42 @@
     }
   }
 }
+
+.contact {
+  background-color: $blue-primary;
+  padding: 62px 0 64px;
+
+  @include medium-up {
+    padding: 87px 0;
+  }
+
+  & .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    @include medium-up {
+      grid-template-columns: 70% 30%;
+      text-align: left;
+    }
+  }
+
+  &__heading {
+    font-size: 23px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-bold;
+    color: $white;
+
+    @include medium-up {
+      font-size: 42px;
+      line-height: 51px;
+    }
+  }
+
+  &__cta {
+    justify-self: center;
+
+    @include medium-up {
+      justify-self: flex-end;
+    }
+  }
+}
